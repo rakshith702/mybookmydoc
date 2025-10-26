@@ -37,55 +37,41 @@
  spring.h2.console.enabled=true
  spring.h2.console.path=/h2-console
  
- 
- Accessing H2 Console
+ ```
+## Accessing H2 Console
 
-Start the backend server:
+1. Start the backend server:
+```bash
+  mvn spring-boot:run
+```
 
-mvn spring-boot:run
-
-
-Open your browser and go to:
-
+2. Open your browser and go to:
+```
 http://localhost:8080/h2-console
-
-
-Use the following credentials to login:
-
-Property	Value
-JDBC URL	jdbc:h2:file:./data/mydb
-Username	sa
-Password	(leave blank)
+```
+3. Use the following credentials to login:
+```bash
+ Use the following credentials to login:
+ Property Value
+ JDBC URL jdbc:h2:file:./data/mydb
+ Username sa
+ Password (leave blank)
+```
 
 You will be able to view and manage the database directly from the H2 console.
 
-Admin Credentials
+## Admin Credentials
 
 You can use the following default credentials to access the admin panel:
-
+```bash
 Username: admin
 Password: admin123
+```
 
-
-Running the Project
-Backend
-
-Backend will start on:
-
-http://localhost:8080
-
-Frontend
-
-Frontend will be available on:
-
-http://localhost:5173
-
-
-(or the port shown in console)
-
-JWT Security
+## JWT Security
 
 The application uses JWT for authentication:
-
+```
 security.jwt.secret=myVerySecretKeyChangeMeToEnvValue
 security.jwt.expiration-ms=86400000
+```
