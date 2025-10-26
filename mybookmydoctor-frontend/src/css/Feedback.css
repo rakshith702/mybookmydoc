@@ -1,0 +1,56 @@
+.custom-navbar {
+  background: linear-gradient(90deg, #007bff 0%, #00bcd4 100%);
+  padding: 0.8rem 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.brand-gradient {
+  background: linear-gradient(to right, #ffffff, #e3f2fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.cool-link {
+  position: relative;
+  color: #f8f9fa !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.cool-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+}
+
+.cool-link:hover {
+  color: #ffffff !important;
+}
+
+.username-badge {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.logout-btn {
+  border-color: white;
+  color: white;
+  transition: all 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: white;
+  color: #007bff;
+}

@@ -1,0 +1,89 @@
+.feedbacks-container {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  min-height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Poppins", sans-serif;
+}
+
+.feedbacks-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  width: 100%;
+  max-width: 900px;
+  animation: fadeInUp 0.8s ease;
+}
+
+.feedbacks-card h3 {
+  text-align: center;
+  color: #0d6efd;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.feedback-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.feedback-table thead {
+  background: #0d6efd;
+  color: white;
+  text-align: center;
+}
+
+.feedback-table th,
+.feedback-table td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.feedback-table tbody tr:hover {
+  background-color: rgba(13, 110, 253, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.feedback-table td:first-child {
+  font-weight: 500;
+}
+
+.feedback-table .rating {
+  font-weight: bold;
+  color: #ffc107;
+}
+
+.no-feedback {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 1.1rem;
+  color: #555;
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

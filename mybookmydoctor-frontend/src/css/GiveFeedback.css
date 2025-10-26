@@ -1,0 +1,111 @@
+.feedback-page {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 60px;
+  font-family: "Poppins", sans-serif;
+}
+
+.feedback-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 35px 40px;
+  width: 90%;
+  max-width: 600px;
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+.feedback-title {
+  text-align: center;
+  color: #4c2ec8;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-select,
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  width: 100%;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.form-select:focus,
+.form-control:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 6px rgba(106, 17, 203, 0.3);
+}
+
+.stars {
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.star {
+  font-size: 28px;
+  color: #ccc;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.star:hover,
+.star.filled {
+  color: #ffc107;
+  transform: scale(1.15);
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  width: 100%;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  transform: translateY(-2px);
+}
+
+.feedback-message {
+  margin-top: 20px;
+  padding: 12px;
+  background: rgba(106, 17, 203, 0.1);
+  border-left: 5px solid #6a11cb;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  color: #333;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

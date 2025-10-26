@@ -1,0 +1,89 @@
+.book-appointment-container {
+  background: linear-gradient(135deg, #0d6efd, #4facfe);
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.book-appointment-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.8s ease;
+}
+
+.book-appointment-card h3 {
+  color: #0d6efd;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.book-appointment-card label {
+  font-weight: 500;
+  color: #333;
+}
+
+.book-appointment-card select,
+.book-appointment-card input {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.book-appointment-card select:focus,
+.book-appointment-card input:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.2);
+}
+
+.book-appointment-card button {
+  background: linear-gradient(135deg, #0d6efd, #007bff);
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  width: 100%;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.book-appointment-card button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #007bff, #0d6efd);
+  box-shadow: 0 6px 15px rgba(13, 110, 253, 0.3);
+}
+
+.alert-info {
+  text-align: center;
+  border-radius: 10px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
