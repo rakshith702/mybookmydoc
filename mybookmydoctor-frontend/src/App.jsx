@@ -8,7 +8,6 @@ import NavbarComp from "./components/Navbar";
 import { setAuthToken } from "./api/api";
 import AdminDashboard from "./pages/AdminDashboard";
 
-// New pages to handle feedback
 import GiveFeedback from "./pages/GiveFeedback";
 import DoctorFeedbacks from "./pages/DoctorFeedbacks";
 
