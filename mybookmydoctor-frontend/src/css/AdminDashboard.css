@@ -136,7 +136,7 @@ button.btn-success:hover {
   background-color: #157347;
 }
 
-/* ===== Animations ===== */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
