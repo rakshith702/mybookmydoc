@@ -26,7 +26,6 @@ public class FeedbackController {
         this.userRepo = userRepo;
     }
 
-    // ✅ PATIENT gives feedback to doctor
     @PostMapping
     public ResponseEntity<?> giveFeedback(
             @RequestParam Long doctorId,
@@ -55,7 +54,6 @@ public class FeedbackController {
         return ResponseEntity.ok(feedback);
     }
 
-    // ✅ For doctor to view all feedback given to them
     @GetMapping("/forMe")
     public ResponseEntity<?> feedbackForDoctor(Authentication auth) {
         String username = auth.getName();
@@ -72,7 +70,6 @@ public class FeedbackController {
         return ResponseEntity.ok(feedbacks);
     }
 
-    // ✅ For patient to view their own feedback submissions
     @GetMapping("/mine")
     public ResponseEntity<?> myFeedbacks(Authentication auth) {
         String username = auth.getName();
@@ -85,7 +82,6 @@ public class FeedbackController {
         return ResponseEntity.ok(feedbackRepo.findByPatientId(patient.getId()));
     }
 
-    // Optional: For admin or listing by doctor ID
     @GetMapping("/doctor/{doctorId}")
     public ResponseEntity<?> getFeedbackByDoctor(@PathVariable Long doctorId) {
         List<Feedback> feedbackList = feedbackRepo.findByDoctorId(doctorId);
