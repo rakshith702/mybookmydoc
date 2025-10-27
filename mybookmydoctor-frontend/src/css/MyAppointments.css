@@ -26,7 +26,6 @@
   padding: 16px;
 }
 
-/* Ensure table fills wrapper and can scroll horizontally if needed */
 .styled-table {
   width: 100%;
   min-width: 700px;
@@ -36,7 +35,6 @@
   box-sizing: border-box;
 }
 
-/* Make sure padding is included when calculating width */
 .styled-table th,
 .styled-table td {
   padding: 14px 20px;
